@@ -20,12 +20,12 @@ Ensure `GITLAB_TOKEN` environment variable is set with a personal access token t
 ## Usage
 
 ```bash
-python scripts/fetch_mr_diff.py <mr_url>
+python3 scripts/fetch_mr_diff.py <mr_url>
 ```
 
 Example:
 ```bash
-python scripts/fetch_mr_diff.py http://10.13.29.154/iflorens/iflorens-bill-ap-core/merge_requests/19
+python3 scripts/fetch_mr_diff.py http://10.13.29.154/iflorens/iflorens-bill-ap-core/merge_requests/19
 ```
 
 ## Output Format
@@ -40,7 +40,7 @@ The script outputs:
 After review, post summary to MR as a comment:
 
 ```bash
-python scripts/post_mr_comment.py <mr_url> "<comment>"
+python3 scripts/post_mr_comment.py <mr_url> "<comment>"
 ```
 
 Before posting, ask user for confirmation. Format the review summary in Markdown.

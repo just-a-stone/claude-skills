@@ -19,9 +19,10 @@ import json
 import urllib.request
 import urllib.error
 from urllib.parse import urlparse, quote
+from typing import Tuple
 
 
-def parse_mr_url(mr_url: str) -> tuple[str, str, str]:
+def parse_mr_url(mr_url: str) -> Tuple[str, str, str]:
     """
     Parse MR URL to extract base_url, project_path, and mr_iid.
     """
