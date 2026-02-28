@@ -38,6 +38,7 @@ The script outputs:
 ## Post Review Comment (Optional)
 
 After review, post summary to MR as a comment:
+(Do not mention AI names like 'by Claude Code' in the comments)
 
 ```bash
 python3 scripts/post_mr_comment.py <mr_url> "<comment>"
