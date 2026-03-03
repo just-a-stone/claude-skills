@@ -52,6 +52,7 @@ zip -r ../dist/skill-name.skill SKILL.md scripts/
 
 **核心脚本**：
 - `scripts/fetch_mr_diff.py` - 解析 MR URL，调用 GitLab API v4 获取 MR 信息和差异
+- `scripts/fetch_file.py` - 从 GitLab 拉取指定文件完整内容，弥补 diff 上下文不足
 - `scripts/post_mr_comment.py` - 向 MR 发布 Markdown 格式审查评论
 
 **支持的 URL 格式**：
